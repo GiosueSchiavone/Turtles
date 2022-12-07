@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Rubik', sans-serif;
+      
+        
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+        #pagina{
+            width: 100vw;
+            height: 100vh;
+            
+        }
+    
+
+        .nomeprogetto{
+            color: #1358B9;
+            flex-direction: row;
+            font-weight: 500;
+            font-size: 33px;
+            line-height: 27px;
+            padding-left: 53px;
+            padding-right: 54px;
+            
+        }
+
+        
+
+        #search{
+
+            padding-left: 48px;
+            padding-right: 50px;
+            width: 30%;
+            color: #1358B9;
+            border: 1px solid black;
+            font-size: smaller;
+            height: 30px;
+        
+        }
+
+        #search::placeholder{
+            color: #1358B9;
+            font-size: small;
+        }
+
+
+        .tartaruga{
+            display: flex;
+            padding-right: 54px;
+ 
+        
+        }
+
+        .trattini img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 237px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            height: 44px;
+            
+            
+            
+           
+        }
+
+        #primaparte{
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            
+            
+        }
+        
+
+        .dash{
+            border: 1px solid black;
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        
+
+        .Leftpage{
+            display: flex;
+            flex-direction: column;
+            color: #1358B9;
+            width: 10%;
+            height: 100vh;
+            border: 1px solid black;
+        }
+        .Leftpage p{
+            padding-left: 12px;
+            padding-top: 8px;
+           
+            
+            
+        }
+
+        .Dashboard{
+            display: flex;
+            color: white;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+            background-color: #1258BA;
+ 
+
+        }
+
+        .Storage{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+        }
+
+        .Quest{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+            
+        }
+
+        .Transport{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+        }
+
+        .Profile{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+        }
+
+        .Notification{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+        }
+
+        .Settings{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            
+        }
+
+        .Logout{
+            display: flex;
+            color: #1358B9;
+            padding-left: 30px;
+            padding-bottom: 25px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .Rightpage{
+            width: 90%;
+            height: 100%;
+            background-color: white;
+        }
+
+        #cerca{
+        
+            font-size: smaller;
+            height: 30px;
+            width: 500px;
+            padding-left: 60px;
+            padding-right: 45px;
+            border: none;
+            background-color: #F0F0F0;
+            border-radius: 10px;
+            padding-bottom: 8px;
+        
+        }
+
+        #cerca::placeholder{
+            color: grey;
+            font-size: small;
+            
+            
+
+            
+            
+            
+            
+
+
+;
+        }
+
+        #titolodestra{
+            font-size: 42px;
+            color: #1258BA;
+            padding-left: 300px;
+            padding-right: 500px;
+
+        }
+
+
+        .partealta{
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            
+        }
+
+        .primapartedestra{
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            padding-left: 36px;
+        }
+
+        .secondapartedestra{
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            padding-left: 36px;
+            padding-bottom: 70px;
+        }
+
+        #immagine1{
+            padding-right: 200px;
+        }
+
+        #immage1{
+            height: 500px;
+            width: 1000px;
+        }
+
+        #immagine2{
+            padding-right: 70px;
+        }
+
+        #immage2{
+            height: 450px;
+        }
+
+        #immagine3{
+            height: 450px;
+            width: 1100px;
+            padding-left: 40px;
+            padding-right: 50px;
+            
+        }
+
+       
+        
+
+
+
+
+        
+
+
+     
+        
+        
+
+
+
+
+    
+        
+    </style>
+</head>
+<body>
+    <section class="pagina">
+        <div id="primaparte">
+
+            <div>
+
+            </div>
+
+        <div class="nomeprogetto">
+            <p class="tartaruga">Turtles</p>
+        </div>
+
+        <div class="trattini">
+            <img src="List.png" alt="linee">
+        </div>
+            <input type="text" name="ricerca" id="search" placeholder="Search">
+        </div>
+
+    </section>
+
+    <section class="dash">
+
+        <div class="Leftpage">
+
+            <div class="Dashboard">
+                <img src="Home.png" alt="home">
+                <p>Dashboard</p>
+            </div>
+            <div class="Storage">
+                <img src="Announced.png" alt="Magazzino">
+                <p>Storage</p>
+            </div>
+            <div class="Quest">
+                <img src="ListChecks.png" alt="Quest">
+                <p>Quest</p>
+            </div>
+            <div class="Transport">
+                <img src="Distributed.png" alt="Camion">
+                <p>Transport</p>
+            </div>
+            
+            <div class="Riga">
+                <img src="Rectangle 393.png" alt="Riga">
+            </div>
+            
+            <div class="Profile">
+                <img src="User.png" alt="profilo">
+                <p>Profile</p>
+            </div>
+            <div class="Notification">
+                <img src="Bell.png" alt="Campana">
+                <p>Notification</p>
+            </div>
+            <div class="Settings">
+                <img src="Gear.png" alt="Rotella">
+                <p>Settings</p>
+            </div>
+            <div class="Logout">
+                <img src="SignOut.png" alt="Uscita">
+                <p>Logout</p>
+            </div>    
+        </div>
+
+        <div class="Rightpage">
+            <section>
+                <div class="partealta">
+                    <p id="titolodestra">Dashboard</p>
+                    
+                        <input type="text" name="cerca" id="cerca" placeholder="Search of anythings...">
+                   
+                </div>
+
+                <div class="primapartedestra">
+                    <div id="immagine1">
+                        <img id="immage1" src="Analytics.png" alt="grafico a tabella">
+                    </div>
+
+                    <div>
+                        <img src="Frame 11.png" alt="percentuale bilancio">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="secondapartedestra">
+                    <div id="immagine2">
+                        <img  id="immage2" src="hover-card.png" alt="incremento persone">
+                    </div>
+
+                    <div>
+                        <img id="immagine3" src="C5EC47F2-DF5B-4F57-974E-0D7026EB55C3.png" alt="mappa Italia">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+        
+</body>
+</html>
